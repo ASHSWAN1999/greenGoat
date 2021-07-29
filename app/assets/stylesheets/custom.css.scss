@@ -1,0 +1,300 @@
+
+@import 'bootstrap/dist/css/bootstrap';
+
+
+.navbar-nav {
+    .nav-link {
+      color: #333333 !important;
+      font-family: Helvetica, sans-serif;
+      font-weight: 200;
+    }
+
+    a:hover {
+      color: var(--primary) !important;
+      text-decoration: none;
+    }
+
+    .bold {
+      font-weight: 600 !important;
+    }
+  }
+
+.search {
+  border: 2px solid #dddddd !important;
+  border-right: 0 !important;
+  border-radius: 10px 0px 0px 10px !important;
+  height: 40px;
+}
+
+.search-btn {
+  border: 2px solid #dddddd !important;
+  border-left: 0 !important;
+  border-radius: 0px 10px 10px 0px !important;
+  height: 40px;
+}
+
+.search-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 36px !important;
+  color: black;
+}
+
+h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 24px !important;
+  color: black;
+}
+
+h3 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 22px !important;
+  color: black;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.btn-primary {
+  background-color: var(--dark);
+  border: none;
+  color: white;
+  padding: 8px 22px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-s);
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 7px 21px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary:hover {
+  background-color: var(--hover-p);
+  text-decoration: none;
+  border: 2px solid black;
+}
+
+.hero1 {
+  background-image: image-url('burned_logo.png');
+  height: 430px;
+  background-position: center;
+  background-size: 110%;
+}
+
+.hero2 {
+  background-image: image-url('old_house.png');
+  height: 430px;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero3 {
+  background-image: image-url('action_shot1.png');
+  height: 430px;
+  background-position: center;
+  background-size: 110%;
+}
+
+.carousel-control-prev {
+  width: 5%;
+  opacity: 75%;
+}
+
+.carousel-control-next {
+  width: 5%;
+  opacity: 75%;
+}
+
+.sale {
+  background-image: image-url('sale.png');
+  background-position: right;
+  background-size: 100%;
+}
+
+
+footer {
+  a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  a:hover {
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  ul {
+    padding-left: 30px;
+  }
+}
+
+
+
+
+
+
+.about1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("about1.png");
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 96px !important;
+  padding-top: 30px;
+  border-radius: 50%;
+  margin-bottom: 20px;  
+}
+
+.about2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("about2.png");
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 96px !important;
+  padding-top: 30px;
+  border-radius: 50%;
+  margin-bottom: 20px;  
+}
+
+.about3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("about3.png");
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 96px !important;
+  padding-top: 30px;
+  border-radius: 50%;
+  margin-bottom: 20px;  
+}
+
+.estimate {
+  background-image: image-url('burned_house.png');
+  background-position: right;
+  background-size: 110%;
+}
+
+.subtitle {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px !important;
+  font-weight: 600;
+  margin-bottom: .1em;
+  line-height: 1.4em;
+}
+
+
+
+
+
+
+
+.wood {
+  background-image: image-url('wood.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.action2 {
+  background-image: image-url('action2.png');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+.action3 {
+  background-image: image-url('action3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.action4 {
+  background-image: image-url('action4.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+// .carousel-item {
+//   background: red;
+//   color: white;
+// }
+
+
+
+
+
+.profile-h {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 2px;
+  font-weight: 300;
+}
+
+hr {
+  margin-top: .25rem;
+  margin-bottom: .5rem;
+  color: #DDE1E6;
+  height: 2px;
+  background-color: #DDE1E6;
+  border-width: 0;
+}
+
+.form-label {
+  margin-top: .8rem;
+  margin-bottom: .2rem;
+  font-family: Helvetica, sans-serif;
+}
+
+.form-control {
+  border: 2px solid #DDE1E6;
+  height: calc(1.5em + 0.75rem + 5px);
+}
+
+.input-detail {
+  color: gray;
+  font-size: 14px;
+  margin-top: .1rem;
+}
