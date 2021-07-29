@@ -1,0 +1,93 @@
+<%= stylesheet_link_tag "application", :media => "all" %>
+
+<nav class="navbar navbar-expand-md navbar-light bg-faded py-1">
+    <a href="/" class="navbar-brand">
+      <%= link_to root_path, class: 'navbar-brand' do %>
+        <%= image_tag 'full_logo.svg', height: '45px' %>
+      <% end %>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar5">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar5">
+        <ul class="navbar-nav d-md-none">
+            <li class="nav-item">
+                <a class="nav-link" href="#">All Departments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-nowrap" href="#">Shop Sets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Rare Finds</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">New Arrivals</a>
+            </li>
+            <hr style="width:100%;text-align:left;margin-left:0">
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="<%= root_path %>">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-nowrap" href="<%= donate_path %>">Donate Materials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<%= about_path %>">About</a>
+            </li>
+        </ul>
+        <form class="mx-3 my-auto d-inline w-100 d-none d-md-block">
+            <div class="input-group">
+                <input type="text" class="search form-control" placeholder="Search...">
+                <span class="input-group-append">
+                    <button class="btn search-btn" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="d-flex flex-row nav-link" href="#">
+                  <%= image_tag 'profile.svg', height: '28px' %>
+                  <div class="text-nowrap align-self-end d-sm-block d-md-none d-lg-block ml-1">Hi, Ashley</div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="d-flex flex-row nav-link" href="#">
+                  <%= image_tag 'heart.svg', height: '28px' %>
+                  <div class="text-nowrap align-self-end d-sm-block d-md-none d-lg-block ml-1">Favorites</div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="d-flex flex-row nav-link" href="#">
+                  <%= image_tag 'cart.svg', height: '28px' %>
+                  <div class="text-nowrap align-self-end d-sm-block d-md-none d-lg-block ml-1">Cart(3)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-md navbar-light bg-white pt-0 pl-2 shadow-sm">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="bold nav-link pt-0" href="#">All Departments</a>
+        </li>
+        <li class="nav-item">
+          <a class="bold nav-link pt-0" href="#">Shop Sets</a>
+        </li>
+        <li class="nav-item">
+          <a class="bold nav-link pt-0" href="#">Rare Finds</a>
+        </li>
+        <li class="nav-item">
+          <a class="bold nav-link pt-0" href="#">New Arrivals</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

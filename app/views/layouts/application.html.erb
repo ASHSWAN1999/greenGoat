@@ -8,9 +8,15 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'logo.svg' %>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+    </style>
   </head>
 
   <body>
+    <%= render 'layouts/navigation' %>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
