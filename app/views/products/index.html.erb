@@ -1,0 +1,66 @@
+<div class="container-fluid text-center px-0">
+    <h1 class="mt-4 product-1">Salvaged Windows</h1>
+    <p>Bread / Crumb / Path</p>
+    <hr class="mt-4">
+</div>
+
+<div class="d-md-none">
+    <p>
+        <button class="btn btn-primary m-3" data-toggle="collapse" data-target="#mobile_filters" role="button" aria-expanded="false">FILTERS</button>
+    </p>
+
+    <div id="mobile_filters" class="collapse">
+        <h3 class="product-heading pl-4 pt-2">Filters go here</h3>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="fixed d-none d-md-block">
+            <h3 class="product-heading pl-4 pt-4">Windows</h3>
+            <hr class="mr-3">
+        </div>
+
+        <div class="col p-4">
+            <div class="row d-flex">
+
+                <% @products.each do |product| %>
+                    <div class="col-6 col-lg-4 col-xl-3 mb-2">
+                        <div class="thumbnail-container">
+                            <%= image_tag("no_image.png") %>
+                            <div class="container tag">
+                                <span class="tag-text">RARE FIND</span>
+                            </div>
+
+                            <button type="button" class="btn">
+                                <%= svg 'heart' %>
+                            </button>
+                        </div>
+
+                        <h2 class="product-heading line-clamp mb-0 mt-3"><%= product.title %> - <%= product.description %></h2>
+                        <div>73.5 in. x 43 in.</div>
+                        <div>
+                            <span class="price">$51.99</span>
+                            <span class="value">$205</span>
+                        </div>
+                        <div class="text-dark mt-2 available">4 available</div>
+                        <div class="mb-4">
+                            <span>Ready for Pickup</span>
+                            <%= svg 'ready' %>
+                        </div>
+                    </div>
+                    
+                <% end %>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+
+
+
+
