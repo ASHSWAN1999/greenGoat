@@ -276,7 +276,7 @@ hr {
   margin-top: .25rem;
   margin-bottom: .5rem;
   color: #DDE1E6;
-  height: 2px;
+  height: 1.5px;
   background-color: #DDE1E6;
   border-width: 0;
 }
@@ -354,19 +354,24 @@ hr {
 }
 
 .thumbnail-container .tag {
-  background-image: url('../images/about1.png');
   position: absolute;
   top: 8%;
   left: 0%;
   padding: 0;
-  min-width: 5rem;
-  max-width: 6rem;
+  width: 33%;
+  min-width: 5.75rem;
+  max-width: 6.5rem;
 }
 
 .thumbnail-container .tag-text {
   color: white;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 .thumbnail-container .btn {
@@ -390,4 +395,17 @@ hr {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;  
   overflow : hidden;
+}
+
+.fav:hover {
+  fill: #222222;
+}
+
+.fav:active {
+  fill: #888888;
+}
+
+.form-control, .btn {
+  box-shadow: none !important;
+  outline: none !important;
 }
