@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_01_161713) do
+ActiveRecord::Schema.define(version: 2021_08_01_210251) do
 
   create_table "products", force: :cascade do |t|
     t.string "title"
@@ -27,9 +27,10 @@ ActiveRecord::Schema.define(version: 2021_08_01_161713) do
     t.float "price"
     t.float "value"
     t.float "amount_available"
-    t.float "units"
-    t.boolean "uninstalled"
-    t.boolean "rare_find"
+    t.string "units"
+    t.boolean "uninstalled", default: true
+    t.boolean "rare_find", default: false
+    t.float "sale_price"
   end
 
 end

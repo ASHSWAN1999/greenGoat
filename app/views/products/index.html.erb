@@ -37,7 +37,7 @@
                                     </svg>
                                     <div class="tag-text">RARE FIND</div>
                                 </div>
-                            <% elsif product.price? %>
+                            <% elsif product.sale_price? %>
                                 <div class="container tag">
                                     <svg viewBox="0 0 174 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M174 0H0V58H174L163.125 29L174 0Z" fill="#2F80ED"/>
@@ -60,10 +60,10 @@
                         <%= " x " + drop_zero(product.depth) + "\"" if product.depth? %>        
 
                         <div>
-                            <span class="price">$<%= product.price %></span>
+                            <span class="price">$<%= product.sale_price? ? product.sale_price : product.price %></span>
                             <span class="value">$<%= product.value %></span>
                         </div>
-                        <div class="text-dark mt-2 available"><%= drop_zero(product.amount_available)%> available</div>
+                        <div class="text-dark mt-2 available"><%= drop_zero(product.amount_available) %> <%=raw product.units %> available</div>
 
                         <% if product.uninstalled? %>
                             <div class="mb-4">
@@ -84,6 +84,8 @@
 </div>
 
 <br>
+
+
 
 
 
