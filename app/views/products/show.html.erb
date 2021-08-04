@@ -1,4 +1,69 @@
-<h1>Showing product details</h1>
+<div class="container px-4 px-sm-0">
+    <div class="row">
+        <div class="btn-primary my-3 ml-1 back">
+            BACK
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-6">
+            <div class="row">
+                <div class="col-3 px-1">
+                    <div class="small-image">
+                        <%= image_tag("no_image.png") %>
+                    </div>
+                    
+                </div>
+                <div class="col-9 px-1">
+                    <div class="large-image">
+                        <%= image_tag("no_image.png") %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 pl-4 pr-4 pr-sm-0">
+            <h1 class="product-1 mt-5 mb-0"><%= @product.description %></h1>
+                <%= drop_zero(@product.width) + "\"" if @product.width? %>
+                <%= " x " + drop_zero(@product.height) + "\"" if @product.height? %>
+                <%= " x " + drop_zero(@product.depth) + "\"" if @product.depth? %>
 
-<p><strong>Title: </strong><%= @product.title %></p>
-<p><strong>Description: </strong><%= @product.description %></p>
+                <div class="price mt-4">$<%= @product.sale_price? ? @product.sale_price : @product.price %></div>
+                <span class="value font-weight-bold">$<%= @product.value %></span>
+                <span class="value-estimate"> <%= (100-(@product.sale_price? ? @product.sale_price : @product.price)/@product.value*100).truncate() %>% off estimated value</span>
+                <br>
+                <div class="row pl-3 pt-4 d-flex align-items-end">
+                    <span class="form-group">
+                        <label for="select" class="quant-label">Quantity</label>
+                        <select class="form-control" id="select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        </select>
+                    </span>
+                    <div class="btn-primary my-3 ml-3">REQUEST A SHOWING</div>
+                </div>
+
+                <h2 class="profile-h mt-5">Description</h2>
+                <hr>
+                <p><%= @product.description %></p>
+
+                <h2 class="profile-h mt-5">Measurments</h2>
+                <hr>
+                <ul class="dimensions">
+                    <li>Width: <%= @product.width %></li>
+                    <li>Height: <%= @product.height %></li>
+                    <li>Depth: <%= @product.depth %></li>
+                    <li>Weight: <%= @product.depth %></li>
+                </ul>
+
+                <h2 class="profile-h mt-5">Condition</h2>
+                <hr>
+                <p><%= @product.description %></p>
+
+                <br>
+                <br>
+                <br>
+        </div>
+    </div>
+</div>
