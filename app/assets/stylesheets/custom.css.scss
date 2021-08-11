@@ -77,7 +77,7 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: var(--hover-s);
+  background-color: #555555;
   text-decoration: none;
 }
 
@@ -457,4 +457,32 @@ hr {
 
 .dimensions {
   column-count: 3;
+}
+
+
+
+
+
+
+.footnote {
+  font-size: 14px;
+}
+
+.btn-wide {
+  width: 100% !important;
+}
+
+.showing-list-card img {
+  width: 6.5rem;
+  height: 6.5rem;
+}
+
+.showing-list-item {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.quantity {
+  color: #828282;
 }

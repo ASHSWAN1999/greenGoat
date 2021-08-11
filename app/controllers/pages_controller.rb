@@ -10,4 +10,8 @@ class PagesController < ApplicationController
     def donate
 
     end
+
+    def checkout
+        
+    end
 end
