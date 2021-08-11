@@ -12,7 +12,7 @@
         <div class="col-lg-4 bg-primary p-5">
           <h2>Salvaging Home Improvement Materials Since 2001</h2>
           <p>greenGoat salvages everything from raw lumber down to light switch covers — rerouting otherwise wasted materials into reuse.</p>
-          <div class="btn-primary mt-2">ABOUT US</div>
+          <button class="btn-primary mt-2" type="button">ABOUT US</button>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
         <div class="col-lg-4 bg-primary p-5">
           <h2>Architectural Features with loads of History</h2>
           <p>Deconstructing historic homes means historic pieces, full of character and craftsmanship. </p>
-          <div class="btn-primary mt-2">RARE FINDS</div>
+          <button class="btn-primary mt-2" type="button">RARE FINDS</button>
         </div>
       </div>
     </div>
@@ -34,7 +34,7 @@
         <div class="col-lg-4 bg-primary p-5">
           <h2>Home Improvement’s Never Been So Green</h2>
           <p>greenGoat has rerouted 2,714 tons of useful materials  back into reuse. Help us continue our mission by shopping salvaged.</p>
-          <div class="btn-primary mt-2">SHOP</div>
+          <button class="btn-primary mt-2" type="button">SHOP</button>
         </div>
       </div>
     </div>
@@ -80,6 +80,7 @@
   </div>
 </div>
 
+<div role="main">
 <div class="container bg-light mt-0 mt-sm-5">
   <h2 class="pt-5 pl-5 pb-2 mb-0">Shop By Category</h2>
 </div>
@@ -87,89 +88,90 @@
 <div class="container p-0 mb-0 mb-sm-5">
 <div class="d-flex justify-content-around flex-wrap p-4 bg-light">
   <div>
-    <div>
+    <div role="presentation" alt="" aria-hidden="true">
       <%= image_tag 'appliances.png', height: '210px' %>
     </div>
-    <div class="btn-secondary mt-3 mb-5">APPLIANCES</div>
+    <button type="button" class="btn-secondary mt-3 mb-5">APPLIANCES</button>
   </div>
   
   <div>
-    <div>
+    <div role="presentation" alt="" aria-hidden="true">
       <%= image_tag 'bathroom.png', height: '210px' %>
     </div>
-    <div class="btn-secondary mt-3 mb-5">BATHROOM</div>
+    <button type="button" class="btn-secondary mt-3 mb-5">BATHROOM</button>
   </div>
 
   <div>
-    <div>
+    <div role="presentation" alt="" aria-hidden="true">
       <%= image_tag 'building_materials.png', height: '210px' %>
     </div>
-    <div class="btn-secondary mt-3 mb-5">BUILDING MATERIALS</div>
+    <button type="button" class="btn-secondary mt-3 mb-5">BUILDING MATERIALS</button>
   </div>
 
 <div>
-    <div>
+    <div role="presentation" alt="" aria-hidden="true">
       <%= image_tag 'doors_and_windows.png', height: '210px' %>
     </div>
-    <div class="btn-secondary mt-3 mb-5">DOORS & WINDOWS</div>
+    <button type="button" class="btn-secondary mt-3 mb-5">DOORS & WINDOWS</button>
   </div>
   
   <div>
-    <div>
+    <div role="presentation" alt="" aria-hidden="true">
       <%= image_tag 'electrical.png', height: '210px' %>
     </div>
-    <div class="btn-secondary mt-3 mb-5">ELECTRICAL</div>
+    <button type="button" class="btn-secondary mt-3 mb-5">ELECTRICAL</button>
   </div>
 
   <div>
-    <div>
+    <div role="presentation" alt="" aria-hidden="true">
       <%= image_tag 'flooring.png', height: '210px' %>
     </div>
-    <div class="btn-secondary mt-3 mb-5">FLOORING</div>
+    <button type="button" class="btn-secondary mt-3 mb-5">FLOORING</button>
   </div>  
 
   <div>
-    <div>
+    <div role="presentation" alt="" aria-hidden="true">
       <%= image_tag 'fireplaces.png', height: '210px' %>
     </div>
-    <div class="btn-secondary mt-3 mb-5">FIREPLACES</div>
+    <button type="button" class="btn-secondary mt-3 mb-5">FIREPLACES</button>
   </div>
   
   <div>
-    <div>
+    <div role="presentation" alt="" aria-hidden="true">
       <%= image_tag 'furniture.png', height: '210px' %>
     </div>
-    <div class="btn-secondary mt-3 mb-5">FURNITURE</div>
+    <button type="button" class="btn-secondary mt-3 mb-5">FURNITURE</button>
   </div>
 
   <div>
-    <div>
+    <div role="presentation" alt="" aria-hidden="true">
       <%= image_tag 'heating_and_cooling.png', height: '210px' %>
     </div>
-    <div class="btn-secondary mt-3 mb-5">HEATING & COOLING</div>
+    <button type="button" class="btn-secondary mt-3 mb-5">HEATING & COOLING</button>
   </div>
 
   <div>
-    <div>
+    <div role="presentation" alt="" aria-hidden="true">
       <%= image_tag 'kitchen.png', height: '210px' %>
     </div>
-    <div class="btn-secondary mt-3 mb-5">KITCHEN</div>
+    <button type="button" class="btn-secondary mt-3 mb-5">KITCHEN</button>
   </div>
   
   <div>
-    <div>
+    <div role="presentation" alt="" aria-hidden="true">
       <%= image_tag 'lawn_and_outdoor_living.png', height: '210px' %>
     </div>
-    <div class="btn-secondary mt-3 mb-5">LAWN & OUTDOOR LIVING</div>
+    <button type="button" class="btn-secondary mt-3 mb-5">LAWN & OUTDOOR LIVING</button>
   </div>
 
   <div>
-    <div>
+    <div role="presentation" alt="" aria-hidden="true">
       <%= image_tag 'lighting.png', height: '210px' %>
     </div>
-    <div class="btn-secondary mt-3 mb-5">LIGHTING</div>
+    <button type="button" class="btn-secondary mt-3 mb-5">LIGHTING</button>
   </div>
 
+</div>
 </div>
 </div>
 
@@ -181,8 +183,8 @@
       <p class="m-0">greenGoat has new items available every day!</p>
     </div>
     <div class="col-lg-4 d-flex align-items-center">
-      <div class="btn-primary my-3 mx-1 text-nowrap">SIGN UP</div>
-      <div class="btn-secondary my-3 mx-1 text-nowrap">SEE SALES</div>
+      <button class="btn-primary my-3 mx-1 text-nowrap">SIGN UP</button>
+      <button class="btn-secondary my-3 mx-1 text-nowrap">SEE SALES</button>
     </div>
   </div>
 </div>

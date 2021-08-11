@@ -3,7 +3,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-faded py-1">
     <a href="/" class="navbar-brand">
       <%= link_to root_path, class: 'navbar-brand' do %>
-        <%= image_tag 'full_logo.svg', height: '45px' %>
+        <%= image_tag("full_logo.svg", size: "200x52", alt: "green goat logo") %>
       <% end %>
     </a>
 
@@ -37,14 +37,14 @@
                 <a class="nav-link" href="<%= about_path %>">About</a>
             </li>
         </ul>
-        <form class="mx-3 my-auto d-inline w-100 d-none d-md-block">
+        <form class="mx-3 my-auto d-inline w-100" role="search">
             <div class="input-group">
-                <input type="text" class="search form-control" placeholder="Search...">
-                <span class="input-group-append">
-                    <button class="btn search-btn" type="button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </span>
+                <input type="text" class="form-control search" placeholder="Search...">
+                <div class="input-group-append">
+                  <button id="basic-addon2" class="input-group-text search-button search-icon">
+                    <%= image_tag("search.svg", size: "22", alt: "search products") %>
+                  </button>
+                </div>
             </div>
         </form>
 
@@ -64,7 +64,7 @@
             <li class="nav-item">
                 <a class="d-flex flex-row nav-link" href="#">
                   <%= image_tag 'cart.svg', height: '28px' %>
-                  <div class="text-nowrap align-self-end d-sm-block d-md-none d-lg-block ml-1">Cart(3)</div>
+                  <div class="text-nowrap align-self-end d-sm-block d-md-none d-lg-block ml-1">Cart (3)</div>
                 </a>
             </li>
         </ul>
