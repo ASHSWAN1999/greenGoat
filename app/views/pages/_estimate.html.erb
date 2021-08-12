@@ -1,0 +1,60 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+        <button type="button" class="close ml-auto pt-3 pr-4" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="corner-x">
+            <%= svg 'exit' %>
+          </span>
+        </button>
+      <div class="modal-body px-4 mx-3">
+        <h3 class="mb-4">Estimate your tax deduction</h3>
+
+        <%= form_with(model: @product, class: "container-fluid", local: true) do |f| %>
+            <div class="row">
+                <%= f.label :title, 'Type of project', class: "" %>
+                <%= f.select(:object_field, ['Full House Demolition',
+                                             'Large-scale Gutting for Renovation', 
+                                             'Kitchen/Bathroom Renovation', 
+                                             'Other'], 
+                                             {}, 
+                                             { :class => 'input' }) %>
+            </div>
+            <div class="row">
+                <%= f.label :primary, 'Address of project', class: "" %>
+                <%= f.text_field :primary, class:"input", placeholder: "1000 Spring St." %>
+            </div>
+            <div class="row">
+                <%= f.label :primary, 'City', class: "" %>
+                <%= f.text_field :primary, class:"input", placeholder: "Boston" %>
+            </div>
+            <div class="row">
+                <div class="col-8 pl-0 pr-1">
+                    <%= f.label :title, 'State', class: "" %>
+                    <%= f.select(:object_field, ['Alabama',
+                                                'Alaska', 
+                                                'Arizona', 
+                                                'Arkansas'], 
+                                                {}, 
+                                                { :class => 'input' }) %>
+                </div>
+                <div class="col-4 pr-0 pl-1">
+                    <%= f.label :primary, 'ZIP', class: "" %>
+                    <%= f.text_field :primary, class:"input", placeholder: "00000" %>
+                </div>
+            </div>
+            <div class="row">
+                <%= f.label :primary, 'Email', class: "" %>
+                <%= f.text_field :primary, class:"input", placeholder: "example@email.com" %>
+            </div>
+            <p class="text-center mt-4">Results will be sent to your email </p>
+            <div class="row d-flex justify-content-center mb-4">
+                <button class="btn btn-green">SEND RESULTS</button>
+            </div>
+        <% end %>
+
+
+      </div>
+    </div>
+  </div>
+</div>

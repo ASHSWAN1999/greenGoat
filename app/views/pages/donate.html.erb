@@ -7,22 +7,24 @@
 
 <br/>
 
-<div class="container">
-  <div class="row">
+<div class="container-fluid px-0 px-md-5">
+
+<div class="container-fluid">
+  <div class="row px-5 p-md-0">
     <div class="col-md-4 text-center d-flex flex-column align-items-center mb-3">
       <div class="about1">1</div>
       <h3>Deconstruction</h3>
-      <p>greenGoat deconstructs your residential property or works with your contractor on salvaging materials</p>
+      <p class="on-white">greenGoat deconstructs your residential property or works with your contractor on salvaging materials</p>
     </div>
     <div class="col-md-4 text-center d-flex flex-column align-items-center mb-3">
       <div class="about2">2</div>
       <h3>Tax Deduction</h3>
-      <p>You get a tax deduction for the value of the donated materials — everything from lumber down to light switches</p>
+      <p class="on-white">You get a tax deduction for the value of the donated materials — everything from lumber down to light switches</p>
     </div>
     <div class="col-md-4 text-center d-flex flex-column align-items-center mb-3">
       <div class="about3">3</div>
       <h3>Material Reuse</h3>
-      <p>greenGoat redistributes the materials to thrifty do-it-yourselfers, reducing construction & demolition waste </p>
+      <p class="on-white">greenGoat redistributes the materials to thrifty do-it-yourselfers, reducing construction & demolition waste </p>
     </div>
   </div>
 </div>
@@ -30,17 +32,21 @@
 
 <br/>
 
-<div class="container estimate">
+<div class="container-fluid estimate">
   <div class="row">
-    <div class="col-md-8 bg-primary my-4 p-5">
+    <div class="col-md-8 bg-primary my-4 p-5 shadow">
       <h2>Estimate your tax deduction</h2>
       <p class="m-0">Choose greenGoat for deconstruction and get a tax deduction equivalent to your home’s material value</p>
-      <div class="btn-primary mt-4">ESTIMATE DEDUCTION</div>
+      <button type="button" class="btn btn-primary mt-4" data-toggle="modal" data-target="#exampleModal">
+        ESTIMATE DEDUCTION
+      </button>
+      <%= render 'estimate' %>
     </div>
   </div>
 </div>
 
-<div class="container p-5 bg-light my-0 my-md-5">
+<div class="container-fluid d-flex justify-content-center my-0 my-md-5 p-0">
+  <div class="col-12 bg-light p-5">
   <h2>Get in Contact</h2>
   <p>To inquire about working with greenGoat for a deconstruction or salvage job, contact us via email or phone</p>
   <p class="ml-4 mb-0"><b>Email:</b> thegoat@greengoat.org</p>
@@ -59,4 +65,7 @@
   <p class="mb-4">We specialize in residential properties, but we encourage you to reach out using the contact info listed above. </p>
   <h3 class="subtitle">Can I donate a single item?</h3>
   <p class="mb-4">Unfortunately, we are not able to accept single items. We recommend donating functional items like small appliances to Goodwill, or looking into your local recycling program. </p>
+  </div>
+</div>
+
 </div>
