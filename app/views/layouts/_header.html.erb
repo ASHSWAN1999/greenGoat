@@ -1,0 +1,59 @@
+<div class="container-fluid nav-shadow" role="navigation">
+    <div class="row d-flex pl-3 pr-4 pl-md-4 pt-0 pt-md-1">
+        <%= link_to root_path do %>
+            <%= image_tag("full_logo.svg", size: "200x52", alt: "green goat logo", class: 'd-none d-md-inline mr-3 mt-2 mb-0') %>
+        <% end %>
+        <%= link_to root_path do %>
+            <%= image_tag("g_logo.svg", size: "52x52", alt: "green goat logo", class: 'd-inline d-md-none my-2') %>
+        <% end %>
+        
+        <div class="d-none row mx-0 d-md-flex align-items-center">
+            <a href="<%= root_path %>" class="nav-link">Home</a>
+            <a href="<%= donate_path %>" class="nav-link">Donate Materials</a>
+            <a href="<%= about_path %>" class="nav-link">About</a>
+        </div>
+
+        <div class="col px-3 d-flex align-items-center">
+            <%= render 'layouts/search' %>
+        </div>
+        
+        
+        <div class="row mx-0 d-flex align-items-center">
+            <a class="d-none d-md-flex flex-row nav-link" href="#">
+                <%= image_tag("profile.svg", alt: "profile", class:"d-none d-md-block") %>
+                <div class="d-none d-lg-block pl-1">Hi, Ashley</div>
+            </a>
+            <a class="d-flex flex-row nav-link" href="#">
+                <%= image_tag("heart.svg", alt: "favorites", class:"") %>
+                <div class="d-none d-lg-block pl-1" aria-hidden="true">Favorites</div>
+            </a>
+            <a class="d-flex flex-row nav-link pr-0" href="<%= checkout_path %>">
+                <%= image_tag("cart.svg", alt: "my cart", class:"") %>
+                <div class="d-none d-lg-block pl-1 " aria-hidden="true">Cart (3)</div>
+            </a>
+        </div>
+
+        <button class="navbar-toggler px-0 pb-2 d-md-none" type="button" data-toggle="collapse" data-target="#navbar5">
+            <%= image_tag("hamburger.svg", alt: "hamburger menu", class:"pl-3 pl-lg-2") %>
+        </button>
+    </div>
+    <div class="row pl-4 pb-2 d-none d-md-flex">
+        <a href=# class="nav-link bold pl-0">All Departments</a>
+        <a href=# class="nav-link bold">Shop Sets</a>
+        <a href=# class="nav-link bold">Rare Finds</a>
+        <a href=# class="nav-link bold">New Arrivals</a>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar5">
+        <a href=# class="nav-link">All Departments</a>
+        <a href=# class="nav-link">Shop Sets</a>
+        <a href=# class="nav-link">Rare Finds</a>
+        <a href=# class="nav-link">New Arrivals</a>
+        <hr>
+        <a href=# class="nav-link">Profile</a>
+        <hr>
+        <a href=# class="nav-link">Donate Materials</a>
+        <a href=# class="nav-link pb-3">About</a>
+    </div>
+
+</div>
