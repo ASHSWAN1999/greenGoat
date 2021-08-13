@@ -37,34 +37,25 @@
                 <a class="nav-link" href="<%= about_path %>">About</a>
             </li>
         </ul>
-        <form class="mx-3 my-auto d-inline w-100" role="search">
-            <div class="input-group">
-                <input type="text" class="form-control search" placeholder="Search...">
-                <div class="input-group-append">
-                  <button id="basic-addon2" class="input-group-text search-button search-icon">
-                    <%= image_tag("search.svg", size: "22", alt: "search products") %>
-                  </button>
-                </div>
-            </div>
-        </form>
+        <%= render 'search' %>
 
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="d-flex flex-row nav-link" href="#">
                   <%= image_tag 'profile.svg', height: '28px' %>
-                  <div class="text-nowrap align-self-end d-sm-block d-md-none d-lg-block ml-1">Hi, Ashley</div>
+                  <div class="text-nowrap align-self-end d-block d-md-none d-lg-block ml-1">Hi, Ashley</div>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="d-flex flex-row nav-link" href="#">
                   <%= image_tag 'heart.svg', height: '28px' %>
-                  <div class="text-nowrap align-self-end d-sm-block d-md-none d-lg-block ml-1">Favorites</div>
+                  <div class="text-nowrap align-self-end d-block d-md-none d-lg-block ml-1">Favorites</div>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="d-flex flex-row nav-link" href="#">
                   <%= image_tag 'cart.svg', height: '28px' %>
-                  <div class="text-nowrap align-self-end d-sm-block d-md-none d-lg-block ml-1">Cart (3)</div>
+                  <div class="text-nowrap align-self-end d-block d-md-none d-lg-block ml-1">Cart (3)</div>
                 </a>
             </li>
         </ul>

@@ -16,7 +16,12 @@
     .bold {
       font-weight: 600 !important;
     }
+
   }
+
+.navbar-toggler {
+  border: none !important;
+}
 
 .search {
   border: 2px solid #DDE1E6 !important;
@@ -106,7 +111,7 @@ p {
   display: inline-block;
   font-size: 15px;
   font-weight: 600;
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.15) !important;
 }
 
 .btn-secondary:hover {
@@ -115,6 +120,11 @@ p {
   text-decoration: none;
   border: 3px solid black;
   padding: 6px 20px;
+}
+
+.btn-primary:focus,.btn-primary:active,.btn-secondary:focus,.btn-secondary:active {
+  outline: none !important;
+  box-shadow: none;
 }
 
 // Home page
@@ -250,9 +260,6 @@ footer {
 }
 
 .input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;       /* Remove default arrow */
   width: 100%;
   border: 2px solid #DDE1E6;
   border-radius: 8px;
@@ -262,9 +269,12 @@ footer {
 }
 
 select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-image: image-url('down_arrow.svg');
   background-repeat: no-repeat;
-  background-position-x: calc(100% - 14px);
+  background-position-x: calc(100% - 12px);
   background-position-y: calc(50%);
 }
 
@@ -305,24 +315,17 @@ label {
   background-position: center;
 }
 
-.action2 {
-  background-image: image-url('action2.png');
-  background-size: cover;
-  background-position: center;
-  height: 200px;
+.action-container {
+  position: relative;
+  width: 100%;
+  min-width: 150px;
 }
 
-.action3 {
-  background-image: image-url('action3.png');
-  background-size: cover;
-  background-position: center;
+.action-container img {
+  width: 100%;
+  height: auto;
 }
 
-.action4 {
-  background-image: image-url('action4.png');
-  background-size: cover;
-  background-position: center;
-}
 
 
 //user's profile page
@@ -546,4 +549,16 @@ hr {
 
 .quantity {
   color: #828282;
+}
+
+.payment-container {
+  position: relative;
+  width: 100%;
+  min-width: 150px;
+  max-width: 250px;
+}
+
+.payment-container img {
+  width: 100%;
+  height: auto;
 }
