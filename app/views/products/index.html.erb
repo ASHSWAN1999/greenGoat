@@ -6,11 +6,11 @@
 
 <div class="d-md-none">
     <p>
-        <button class="btn btn-primary m-3" data-toggle="collapse" data-target="#mobile_filters" role="button" aria-expanded="false">FILTERS</button>
+        <button class="btn btn-primary ml-4 mt-2" data-toggle="collapse" data-target="#mobile_filters" role="button" aria-expanded="false">FILTERS</button>
     </p>
 
     <div id="mobile_filters" class="collapse">
-        <h3 class="product-heading pl-4 pt-2">Filters go here</h3>
+        <%= render 'filters' %>
     </div>
 </div>
 
@@ -18,8 +18,7 @@
     <div class="row">
 
         <div class="fixed d-none d-md-block">
-            <h3 class="product-heading pl-4 pt-4">Windows</h3>
-            <hr class="mr-3">
+            <%= render 'filters' %>
         </div>
 
         <div class="col p-4">
