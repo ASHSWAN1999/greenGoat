@@ -14,4 +14,8 @@ class PagesController < ApplicationController
     def checkout
         
     end
+
+    def favorites
+        @products = Product.all
+    end
 end

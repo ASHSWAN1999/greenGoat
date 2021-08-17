@@ -7,7 +7,7 @@
             <%= image_tag("g_logo.svg", size: "52x52", alt: "green goat logo", class: 'd-inline d-md-none my-2') %>
         <% end %>
         
-        <div class="d-none row mx-0 d-md-flex align-items-center">
+        <div class="d-none row mx-0 d-md-flex align-items-center stroke">
             <a href="<%= root_path %>" class="nav-link">Home</a>
             <a href="<%= donate_path %>" class="nav-link">Donate Materials</a>
             <a href="<%= about_path %>" class="nav-link">About</a>
@@ -23,7 +23,7 @@
                 <%= image_tag("profile.svg", alt: "profile", class:"d-none d-md-block") %>
                 <div class="d-none d-lg-block pl-1">Hi, Ashley</div>
             </a>
-            <a class="d-flex flex-row nav-link" href="#">
+            <a class="d-flex flex-row nav-link" href="<%= favorites_path %>">
                 <%= image_tag("heart.svg", alt: "favorites", class:"") %>
                 <div class="d-none d-lg-block pl-1" aria-hidden="true">Favorites</div>
             </a>

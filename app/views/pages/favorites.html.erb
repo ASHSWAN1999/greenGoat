@@ -1,0 +1,38 @@
+<div class="container-fluid text-center px-0">
+    <h1 class="mt-4 product-1">Favorites</h1>
+    <hr class="mt-4" role="presentation">
+</div>
+
+<% if @products.count.zero? %>
+    <div class="text-center my-5 py-5">
+        <%= image_tag("heart.svg", size: "40x40", alt: "", role:"presentation") %>
+        <h2 class="mt-4">Save your favorites for later</h2>
+        <p>When you favorite an item, it will appear here</p>
+        <button class="btn-primary mt-2 mb-5" type="button">SHOP NOW</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+<% else %>
+
+<div class="container p-1">
+        <div class="row d-flex justify-content-center mt-3">
+            <button class="pill start">ALL</button>
+            <button class="pill center">AVAILABLE</button>
+            <button class="pill end">SOLD</button>
+        </div>
+
+        <div class="col py-4">
+            <div class="row d-flex">
+                <% @products.each do |product| %>
+                    <%= render partial: 'products/product_card', locals: {:product => product} %>
+                <% end %>
+            </div>
+        </div>
+</div>
+
+
+<% end %>
