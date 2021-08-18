@@ -1,21 +1,25 @@
 <footer role="contentinfo">
-  <div class="p-5 border-bottom bg-dark">
+  <div class="p-4 p-md-5 border-bottom bg-dark">
     <div class="row">
-      <a href="<%= root_path %>" class="col-lg-3 col-sm-12 mb-4">
-        <%= image_tag("logo_white.svg", size: "210x70", alt: "green goat logo") %>
-      </a>
+      <div class="col p-0">
+        <a href="<%= root_path %>" class="col-lg-3 col-sm-12 mb-4">
+          <%= image_tag("logo_white.svg", size: "210x70", alt: "green goat logo") %>
+        </a>
+      </div>
 
-      <div class="col-md-7 d-flex">
+      <div class="col d-flex justify-content-end text-right p-0">
         <div>
-          <ul>
+          <ul class="d-none d-md-block pl-0 pr-4 pb-1 vertical">
             <li><a href="#">SHOP</a></li>
             <li><a href="#">DONATE</a></li>
             <li><a href="#">ABOUT</a></li>
           </ul>
         </div>
+      </div>
 
+      <div class="col pl-4 pr-0">
         <div>
-          <ul class="site-links">
+          <ul class="site-links p-0 mt-3 mt-md-0">
             <li><a href="#">Appliances</a></li>
             <li><a href="#">Bathroom</a></li>
             <li><a href="#">Building Materials</a></li>
@@ -33,7 +37,7 @@
 
       </div>
 
-      <div class="col-md-2 d-flex justify-content-end">
+      <div class="col d-flex justify-content-center p-0">
         <a href="https://www.facebook.com/greenGoatshop/" class="px-1"><%= image_tag("facebook.svg", size: "40", alt: "facebook page") %></a>
         <a href="https://twitter.com/greengoatee" class="px-1"><%= image_tag("twitter.svg", size: "40", alt: "twitter profile") %></a>
         <a href="https://www.pinterest.com/greenGoatee/_created/" class="px-1"><%= image_tag("pinterest.svg", size: "40", alt: "pinterest page") %></a>
